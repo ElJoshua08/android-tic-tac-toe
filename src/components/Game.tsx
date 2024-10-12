@@ -103,7 +103,7 @@ export const Game = () => {
             variant="outline"
             className="size-28"
           >
-            <Text>{cell}</Text>
+            <Text className='text-5xl font-bold'>{cell}</Text>
           </Button>
         ))}
       </View>
