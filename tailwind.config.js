@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  presets: [require('nativewind/preset')],
   theme: {
     extend: {
       colors: {
@@ -33,40 +31,37 @@ module.exports = {
       borderRadius: {
         DEFAULT: '0.5rem',
       },
-      // Define los colores para el modo oscuro dentro del mismo objeto
+    },
+  },
+  darkMode: 'class',
+  theme: {
+    extend: {
       colors: {
-        dark: {
-          background: '#1b1b1b',
-          foreground: '#f2f2f2',
-          card: '#3c3c3c',
-          'card-foreground': '#f2f2f2',
-          popover: '#1a1a1a',
-          'popover-foreground': '#f2f2f2',
-          primary: '#d92648',
-          'primary-foreground': '#ffe1e1',
-          secondary: '#282828',
-          'secondary-foreground': '#fafafa',
-          muted: '#262626',
-          'muted-foreground': '#a2a2a2',
-          accent: '#282828',
-          'accent-foreground': '#fafafa',
-          destructive: '#993333',
-          'destructive-foreground': '#ffd4d4',
-          border: '#404040',
-          input: '#404040',
-          ring: '#d92648',
-          'chart-1': '#4682b4',
-          'chart-2': '#66cdaa',
-          'chart-3': '#ff9933',
-          'chart-4': '#9370db',
-          'chart-5': '#d87093',
-        },
+        background: '#1b1b1b',
+        foreground: '#f2f2f2',
+        card: '#3c3c3c',
+        'card-foreground': '#f2f2f2',
+        popover: '#1a1a1a',
+        'popover-foreground': '#f2f2f2',
+        primary: '#d92648',
+        'primary-foreground': '#ffe1e1',
+        secondary: '#282828',
+        'secondary-foreground': '#fafafa',
+        muted: '#262626',
+        'muted-foreground': '#a2a2a2',
+        accent: '#282828',
+        'accent-foreground': '#fafafa',
+        destructive: '#993333',
+        'destructive-foreground': '#ffd4d4',
+        border: '#404040',
+        input: '#404040',
+        ring: '#d92648',
+        'chart-1': '#4682b4',
+        'chart-2': '#66cdaa',
+        'chart-3': '#ff9933',
+        'chart-4': '#9370db',
+        'chart-5': '#d87093',
       },
     },
-    darkMode: 'class',
   },
-  future: {
-    hoverOnlyWhenSupported: true,
-  },
-  plugins: [],
 };
