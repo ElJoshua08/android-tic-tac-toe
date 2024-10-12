@@ -1,7 +1,6 @@
 {
   "expo": {
     "scheme": "acme",
-    "userInterfaceStyle": "automatic",
     "orientation": "default",
     "web": {
       "output": "static",
@@ -16,6 +15,10 @@
       ]
     ],
     "name": "tic-tac-toe",
-    "slug": "tic-tac-toe"
+    "slug": "tic-tac-toe",
+    "userInterfaceStyle": "automatic",
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }
